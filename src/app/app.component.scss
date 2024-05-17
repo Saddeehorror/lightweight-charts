@@ -1,0 +1,74 @@
+.card {
+  width: 80%; /* Inicialmente ocupa el 80% del ancho de la pantalla */
+  max-width: 800px; /* Máximo ancho de 600px para evitar que se extienda demasiado en pantallas grandes */
+  margin: 0 auto; /* Centrar la tarjeta en la pantalla */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-price{
+  font-size: 13px;
+  color: #5a5a5a;
+  padding-bottom: 5px !important;
+  width: 100%;
+  display: inline-block
+}
+.current-value{
+  font-weight: 700;
+  font-size: 20px;
+  display:inline-block;
+  width: 100%;
+}
+
+.chart-container{
+  position: relative;
+}
+  .tooltip {
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #000; /* Borde */
+    border-radius: 4px; /* Borde redondeado */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #000 !important;
+    color: #fff;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* Reducir el ancho al 90% en pantallas más pequeñas */
+  }
+}
+
+.up{
+  color: green;
+}
+.down{
+  color: #c41515;
+}
+
+.filter-buttons{
+  max-width: 600px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  button{
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #ced4da;
+      color: #a9ff9e;
+  }
+}
+
+.lightweight-chart-plot-background-horizontal-line {
+  stroke: transparent !important; /* Establece el color de línea horizontal a transparente */
+}
+
+.lightweight-chart-plot-background-vertical-line {
+  stroke: transparent !important; /* Establece el color de línea vertical a transparente */
+}
